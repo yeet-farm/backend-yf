@@ -1,10 +1,10 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: process.env.YF_DB_USER,
-    host: process.env.YF_DB_HOST,
-    database: 'api',
-    password: process.env.YF_DB_PASSWORD,
-    port: 5432,
+  user: process.env.YF_DB_USER,
+  host: process.env.YF_DB_HOST,
+  database: 'api',
+  password: process.env.YF_DB_PASSWORD,
+  port: 5432
 })
 
 const getUsers = (request, response) => {
@@ -39,7 +39,7 @@ const createUser = (request, response) => {
 }
 
 module.exports = {
-	getUsers,
-    getUserById,
-    createUser,
+  getUsers,
+  getUserById,
+  createUser
 }
